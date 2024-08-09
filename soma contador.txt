@@ -1,0 +1,19 @@
+
+
+# Inicializa a lista de contadores
+contadores = []
+
+# Solicita ao usuário que informe os contadores
+print("Informe os contadores (digite 0 para encerrar):")
+contador = None
+while contador != 0:
+    contador = int(input("Informe o valor do contador: "))
+    contadores.append(contador)
+
+# Remove o último elemento (que é 0 e não deve ser somado)
+contadores.pop()
+
+# Soma de todos os contadores
+soma = sum(contadores)
+
+print("A soma de todos os contadores é:", soma)
